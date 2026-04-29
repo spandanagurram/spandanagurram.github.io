@@ -1,235 +1,489 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gurram Spandana | Backend Developer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-          },
-          colors: {
-            brand: {
-              50: "#eef6ff",
-              100: "#d9ebff",
-              600: "#2563eb",
-              700: "#1d4ed8",
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gurram Spandana | Backend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                50: "#eef6ff",
+                100: "#d9ebff",
+                600: "#2563eb",
+                700: "#1d4ed8",
+              },
             },
           },
         },
-      },
-    };
-  </script>
-</head>
+      };
+    </script>
+  </head>
 
-<body class="bg-slate-50 text-slate-800 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
-  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90">
-    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Primary navigation">
-      <a href="#home" class="text-lg font-semibold tracking-tight text-slate-950 dark:text-white">Gurram Spandana</a>
+  <body
+    class="bg-slate-50 text-slate-800 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100"
+  >
+    <header
+      class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90"
+    >
+      <nav
+        class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-8"
+        aria-label="Primary navigation"
+      >
+        <a
+          href="#home"
+          class="text-lg font-semibold tracking-tight text-slate-950 dark:text-white"
+          >Gurram Spandana</a
+        >
 
-      <div class="hidden items-center gap-7 text-sm font-medium text-slate-600 dark:text-slate-300 md:flex">
-        <a class="transition hover:text-brand-600 dark:hover:text-brand-100" href="#home">Home</a>
-        <a class="transition hover:text-brand-600 dark:hover:text-brand-100" href="#about">About</a>
-        <a class="transition hover:text-brand-600 dark:hover:text-brand-100" href="#skills">Skills</a>
-        <a class="transition hover:text-brand-600 dark:hover:text-brand-100" href="#experience">Experience</a>
-        <a class="transition hover:text-brand-600 dark:hover:text-brand-100" href="#projects">Projects</a>
-        <a class="transition hover:text-brand-600 dark:hover:text-brand-100" href="#contact">Contact</a>
-      </div>
-
-      <a href="resume.html" class="inline-flex items-center justify-center rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md">
-        Resume →
-      </a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="mx-auto grid min-h-[calc(100vh-73px)] max-w-6xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
-      <div>
-        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100">Backend Developer</p>
-        <h1 class="max-w-3xl text-4xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl">
-          Gurram Spandana
-        </h1>
-        <p class="mt-5 max-w-2xl text-xl font-medium text-slate-700 dark:text-slate-300">
-          Backend Developer (Python Django)
-        </p>
-        <p class="mt-5 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400 sm:text-lg">
-          Building reliable web applications and clean APIs with a focus on performance, maintainability, and practical business impact.
-        </p>
-        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-          <a href="#projects" class="inline-flex items-center justify-center rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md">
-            View Projects
-          </a>
-          <a href="#contact" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-100 hover:text-brand-700 hover:shadow-md dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-slate-600">
-            Contact Me
-          </a>
+        <div
+          class="hidden items-center gap-7 text-sm font-medium text-slate-600 dark:text-slate-300 md:flex"
+        >
+          <a
+            class="transition hover:text-brand-600 dark:hover:text-brand-100"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="transition hover:text-brand-600 dark:hover:text-brand-100"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="transition hover:text-brand-600 dark:hover:text-brand-100"
+            href="#skills"
+            >Skills</a
+          >
+          <a
+            class="transition hover:text-brand-600 dark:hover:text-brand-100"
+            href="#experience"
+            >Experience</a
+          >
+          <a
+            class="transition hover:text-brand-600 dark:hover:text-brand-100"
+            href="#projects"
+            >Projects</a
+          >
+          <a
+            class="transition hover:text-brand-600 dark:hover:text-brand-100"
+            href="#contact"
+            >Contact</a
+          >
         </div>
-      </div>
 
-      <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-        <div class="flex h-20 w-20 items-center justify-center rounded-2xl bg-brand-50 text-3xl font-bold text-brand-700 dark:bg-slate-800 dark:text-brand-100">
-          GS
-        </div>
-        <h2 class="mt-8 text-2xl font-semibold text-slate-950 dark:text-white">Python Django Developer</h2>
-        <p class="mt-4 leading-7 text-slate-600 dark:text-slate-400">
-          Experienced in backend development, REST APIs, database-driven applications, and collaborative software delivery.
-        </p>
-        <div class="mt-8 grid grid-cols-2 gap-4 text-sm">
-          <div class="rounded-xl bg-slate-50 p-4 dark:bg-slate-800">
-            <p class="font-semibold text-slate-950 dark:text-white">Core Stack</p>
-            <p class="mt-1 text-slate-600 dark:text-slate-400">Python, Django, DRF</p>
+        <a
+          href="resume.html"
+          class="inline-flex items-center justify-center rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md"
+        >
+          Resume →
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        id="home"
+        class="mx-auto grid min-h-[calc(100vh-73px)] max-w-6xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8"
+      >
+        <div>
+          <p
+            class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100"
+          >
+            Backend Developer
+          </p>
+          <h1
+            class="max-w-3xl text-4xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl"
+          >
+            Gurram Spandana
+          </h1>
+          <p
+            class="mt-5 max-w-2xl text-xl font-medium text-slate-700 dark:text-slate-300"
+          >
+            Backend Developer (Python Django)
+          </p>
+          <p
+            class="mt-5 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400 sm:text-lg"
+          >
+            Building reliable web applications and clean APIs with a focus on
+            performance, maintainability, and practical business impact.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#projects"
+              class="inline-flex items-center justify-center rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md"
+            >
+              View Projects
+            </a>
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-100 hover:text-brand-700 hover:shadow-md dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-slate-600"
+            >
+              Contact Me
+            </a>
           </div>
-          <div class="rounded-xl bg-slate-50 p-4 dark:bg-slate-800">
-            <p class="font-semibold text-slate-950 dark:text-white">Database</p>
-            <p class="mt-1 text-slate-600 dark:text-slate-400">MySQL</p>
+        </div>
+
+        <div
+          class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+        >
+          <div
+            class="flex h-20 w-20 items-center justify-center rounded-2xl bg-brand-50 text-3xl font-bold text-brand-700 dark:bg-slate-800 dark:text-brand-100"
+          >
+            GS
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="border-y border-slate-200 bg-white py-20 dark:border-slate-800 dark:bg-slate-900">
-      <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100">About</p>
-        <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white">Professional Summary</h2>
-        <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
-          Backend Developer with experience building and maintaining web applications using Python, Django, and REST APIs.
-          Skilled in developing database-backed features, debugging production issues, and collaborating with teams to deliver stable software.
-          Focused on writing clean, maintainable code and continuously improving application reliability and user value.
-        </p>
-      </div>
-    </section>
-
-    <section id="skills" class="mx-auto max-w-6xl px-5 py-20 lg:px-8">
-      <div class="max-w-2xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100">Skills</p>
-        <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white">Technical Capabilities</h2>
-      </div>
-
-      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
-          <h3 class="font-semibold text-slate-950 dark:text-white">Programming</h3>
-          <p class="mt-3 text-slate-600 dark:text-slate-400">Python, JavaScript</p>
-        </article>
-        <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
-          <h3 class="font-semibold text-slate-950 dark:text-white">Backend</h3>
-          <p class="mt-3 text-slate-600 dark:text-slate-400">Django, DRF</p>
-        </article>
-        <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
-          <h3 class="font-semibold text-slate-950 dark:text-white">Frontend</h3>
-          <p class="mt-3 text-slate-600 dark:text-slate-400">HTML, CSS, basic React</p>
-        </article>
-        <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
-          <h3 class="font-semibold text-slate-950 dark:text-white">Database</h3>
-          <p class="mt-3 text-slate-600 dark:text-slate-400">MySQL</p>
-        </article>
-        <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 sm:col-span-2">
-          <h3 class="font-semibold text-slate-950 dark:text-white">Tools</h3>
-          <p class="mt-3 text-slate-600 dark:text-slate-400">Git, Postman, VS Code</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="border-y border-slate-200 bg-white py-20 dark:border-slate-800 dark:bg-slate-900">
-      <div class="mx-auto max-w-6xl px-5 lg:px-8">
-        <div class="max-w-2xl">
-          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100">Experience</p>
-          <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white">Work History</h2>
-        </div>
-
-        <article class="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950 sm:p-8">
-          <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-            <div>
-              <h3 class="text-xl font-semibold text-slate-950 dark:text-white">Software Developer</h3>
-              <p class="mt-1 font-medium text-slate-700 dark:text-slate-300">Verizon</p>
+          <h2
+            class="mt-8 text-2xl font-semibold text-slate-950 dark:text-white"
+          >
+            Python Django Developer
+          </h2>
+          <p class="mt-4 leading-7 text-slate-600 dark:text-slate-400">
+            Experienced in backend development, REST APIs, database-driven
+            applications, and collaborative software delivery.
+          </p>
+          <div class="mt-8 grid grid-cols-2 gap-4 text-sm">
+            <div class="rounded-xl bg-slate-50 p-4 dark:bg-slate-800">
+              <p class="font-semibold text-slate-950 dark:text-white">
+                Core Stack
+              </p>
+              <p class="mt-1 text-slate-600 dark:text-slate-400">
+                Python, Django, DRF
+              </p>
             </div>
-            <p class="text-sm font-medium text-slate-500 dark:text-slate-400">April 2022 - Feb 2025</p>
+            <div class="rounded-xl bg-slate-50 p-4 dark:bg-slate-800">
+              <p class="font-semibold text-slate-950 dark:text-white">
+                Database
+              </p>
+              <p class="mt-1 text-slate-600 dark:text-slate-400">MySQL</p>
+            </div>
           </div>
-          <ul class="mt-6 space-y-3 text-slate-600 dark:text-slate-400">
-            <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"></span><span>Developed and maintained backend features supporting business-critical application workflows.</span></li>
-            <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"></span><span>Built and integrated REST API functionality to improve data flow across internal systems.</span></li>
-            <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"></span><span>Worked with databases to design queries, troubleshoot issues, and support reliable application performance.</span></li>
-            <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"></span><span>Collaborated with cross-functional teams through code reviews, defect resolution, and release support.</span></li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="mx-auto max-w-6xl px-5 py-20 lg:px-8">
-      <div class="max-w-2xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100">Projects</p>
-        <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white">Selected Work</h2>
-      </div>
-
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
-        <article class="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
-          <h3 class="text-xl font-semibold text-slate-950 dark:text-white">Expense Tracker</h3>
-          <p class="mt-4 flex-1 leading-7 text-slate-600 dark:text-slate-400">
-            A web application for tracking expenses, organizing spending records, and managing data through a structured backend.
-          </p>
-          <p class="mt-6 text-sm font-semibold text-brand-700 dark:text-brand-100">Django + MySQL</p>
-        </article>
-
-        <article class="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
-          <h3 class="text-xl font-semibold text-slate-950 dark:text-white">Daily Sales Tracker - Craving Spot</h3>
-          <p class="mt-4 flex-1 leading-7 text-slate-600 dark:text-slate-400">
-            A sales tracking system for recording daily transactions and exposing backend data through RESTful endpoints.
-          </p>
-          <p class="mt-6 text-sm font-semibold text-brand-700 dark:text-brand-100">Django + DRF</p>
-        </article>
-
-        <article class="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
-          <h3 class="text-xl font-semibold text-slate-950 dark:text-white">Task Manager REST API</h3>
-          <p class="mt-4 flex-1 leading-7 text-slate-600 dark:text-slate-400">
-            A REST API for creating, updating, and organizing tasks with clear endpoints and backend validation.
-          </p>
-          <p class="mt-6 text-sm font-semibold text-brand-700 dark:text-brand-100">Python, Django, DRF</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="border-t border-slate-200 bg-white py-20 dark:border-slate-800 dark:bg-slate-900">
-      <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100">Contact</p>
-        <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white">Let&apos;s Connect</h2>
-        <p class="mt-5 text-lg leading-8 text-slate-600 dark:text-slate-400">
-          Open to backend development opportunities and collaborations focused on clean, dependable web applications.
-        </p>
-
-        <div class="mt-10 grid gap-4 text-left sm:grid-cols-3">
-          <a href="mailto:spandana.vrl@gmail.com" class="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-950">
-            <p class="text-sm font-semibold text-slate-950 dark:text-white">Email</p>
-            <p class="mt-2 break-words text-sm text-slate-600 dark:text-slate-400">spandana.vrl@gmail.com</p>
-          </a>
-          <a href="https://github.com/Gurram-Spandana" target="_blank" rel="noopener noreferrer" class="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-950">
-            <p class="text-sm font-semibold text-slate-950 dark:text-white">GitHub</p>
-            <p class="mt-2 break-words text-sm text-slate-600 dark:text-slate-400">github.com/Gurram-Spandana</p>
-          </a>
-          <a href="https://www.linkedin.com/in/spandana-gurram/" target="_blank" rel="noopener noreferrer" class="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-950">
-            <p class="text-sm font-semibold text-slate-950 dark:text-white">LinkedIn</p>
-            <p class="mt-2 break-words text-sm text-slate-600 dark:text-slate-400">linkedin.com/in/spandana-gurram</p>
-          </a>
         </div>
+      </section>
+
+      <section
+        id="about"
+        class="border-y border-slate-200 bg-white py-20 dark:border-slate-800 dark:bg-slate-900"
+      >
+        <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100"
+          >
+            About
+          </p>
+          <h2
+            class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white"
+          >
+            Professional Summary
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
+            Backend Developer with experience building and maintaining web
+            applications using Python, Django, and REST APIs. Skilled in
+            developing database-backed features, debugging production issues,
+            and collaborating with teams to deliver stable software. Focused on
+            writing clean, maintainable code and continuously improving
+            application reliability and user value.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="mx-auto max-w-6xl px-5 py-20 lg:px-8">
+        <div class="max-w-2xl">
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100"
+          >
+            Skills
+          </p>
+          <h2
+            class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white"
+          >
+            Technical Capabilities
+          </h2>
+        </div>
+
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article
+            class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+          >
+            <h3 class="font-semibold text-slate-950 dark:text-white">
+              Programming
+            </h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-400">
+              Python, JavaScript
+            </p>
+          </article>
+          <article
+            class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+          >
+            <h3 class="font-semibold text-slate-950 dark:text-white">
+              Backend
+            </h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-400">Django, DRF</p>
+          </article>
+          <article
+            class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+          >
+            <h3 class="font-semibold text-slate-950 dark:text-white">
+              Frontend
+            </h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-400">
+              HTML, CSS, basic React
+            </p>
+          </article>
+          <article
+            class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+          >
+            <h3 class="font-semibold text-slate-950 dark:text-white">
+              Database
+            </h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-400">MySQL</p>
+          </article>
+          <article
+            class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 sm:col-span-2"
+          >
+            <h3 class="font-semibold text-slate-950 dark:text-white">Tools</h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-400">
+              Git, Postman, VS Code
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="border-y border-slate-200 bg-white py-20 dark:border-slate-800 dark:bg-slate-900"
+      >
+        <div class="mx-auto max-w-6xl px-5 lg:px-8">
+          <div class="max-w-2xl">
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100"
+            >
+              Experience
+            </p>
+            <h2
+              class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white"
+            >
+              Work History
+            </h2>
+          </div>
+
+          <article
+            class="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950 sm:p-8"
+          >
+            <div
+              class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between"
+            >
+              <div>
+                <h3
+                  class="text-xl font-semibold text-slate-950 dark:text-white"
+                >
+                  Software Developer
+                </h3>
+                <p class="mt-1 font-medium text-slate-700 dark:text-slate-300">
+                  Verizon
+                </p>
+              </div>
+              <p class="text-sm font-medium text-slate-500 dark:text-slate-400">
+                April 2022 - Feb 2025
+              </p>
+            </div>
+            <ul class="mt-6 space-y-3 text-slate-600 dark:text-slate-400">
+              <li class="flex gap-3">
+                <span
+                  class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"
+                ></span
+                ><span
+                  >Developed and maintained backend features supporting
+                  business-critical application workflows.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span
+                  class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"
+                ></span
+                ><span
+                  >Built and integrated REST API functionality to improve data
+                  flow across internal systems.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span
+                  class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"
+                ></span
+                ><span
+                  >Worked with databases to design queries, troubleshoot issues,
+                  and support reliable application performance.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span
+                  class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"
+                ></span
+                ><span
+                  >Collaborated with cross-functional teams through code
+                  reviews, defect resolution, and release support.</span
+                >
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="mx-auto max-w-6xl px-5 py-20 lg:px-8">
+        <div class="max-w-2xl">
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100"
+          >
+            Projects
+          </p>
+          <h2
+            class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white"
+          >
+            Selected Work
+          </h2>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article
+            class="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+          >
+            <h3 class="text-xl font-semibold text-slate-950 dark:text-white">
+              Expense Tracker
+            </h3>
+            <p class="mt-4 flex-1 leading-7 text-slate-600 dark:text-slate-400">
+              A web application for tracking expenses, organizing spending
+              records, and managing data through a structured backend.
+            </p>
+            <p
+              class="mt-6 text-sm font-semibold text-brand-700 dark:text-brand-100"
+            >
+              Django + MySQL
+            </p>
+          </article>
+
+          <article
+            class="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+          >
+            <h3 class="text-xl font-semibold text-slate-950 dark:text-white">
+              Daily Sales Tracker - Craving Spot
+            </h3>
+            <p class="mt-4 flex-1 leading-7 text-slate-600 dark:text-slate-400">
+              A sales tracking system for recording daily transactions and
+              exposing backend data through RESTful endpoints.
+            </p>
+            <p
+              class="mt-6 text-sm font-semibold text-brand-700 dark:text-brand-100"
+            >
+              Django + DRF
+            </p>
+          </article>
+
+          <article
+            class="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+          >
+            <h3 class="text-xl font-semibold text-slate-950 dark:text-white">
+              Task Manager REST API
+            </h3>
+            <p class="mt-4 flex-1 leading-7 text-slate-600 dark:text-slate-400">
+              A REST API for creating, updating, and organizing tasks with clear
+              endpoints and backend validation.
+            </p>
+            <p
+              class="mt-6 text-sm font-semibold text-brand-700 dark:text-brand-100"
+            >
+              Python, Django, DRF
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="border-t border-slate-200 bg-white py-20 dark:border-slate-800 dark:bg-slate-900"
+      >
+        <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-100"
+          >
+            Contact
+          </p>
+          <h2
+            class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white"
+          >
+            Let&apos;s Connect
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600 dark:text-slate-400">
+            Open to backend development opportunities and collaborations focused
+            on clean, dependable web applications.
+          </p>
+
+          <div class="mt-10 grid gap-4 text-left sm:grid-cols-3">
+            <a
+              href="mailto:spandana.vrl@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Spandana,"
+              class="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-950"
+            >
+              <p class="text-sm font-semibold text-slate-950 dark:text-white">
+                Email
+              </p>
+              <p
+                class="mt-2 break-words text-sm text-slate-600 dark:text-slate-400"
+              >
+                spandana.vrl@gmail.com
+              </p>
+            </a>
+            <a
+              href="https://github.com/spandanagurram"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-950"
+            >
+              <p class="text-sm font-semibold text-slate-950 dark:text-white">
+                GitHub
+              </p>
+              <p
+                class="mt-2 break-words text-sm text-slate-600 dark:text-slate-400"
+              >
+                github.com/Gurram-Spandana
+              </p>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/spandana-gurram/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-950"
+            >
+              <p class="text-sm font-semibold text-slate-950 dark:text-white">
+                LinkedIn
+              </p>
+              <p
+                class="mt-2 break-words text-sm text-slate-600 dark:text-slate-400"
+              >
+                linkedin.com/in/spandana-gurram
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 py-6 dark:border-slate-800">
+      <div
+        class="max-w-6xl mx-auto px-5 flex justify-between items-center text-sm text-slate-500 dark:text-slate-400"
+      >
+        <!-- Left -->
+        <p>Spandana</p>
+
+        <!-- Right -->
+        <p>Hyderabad, India</p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="border-t border-slate-200 py-6 dark:border-slate-800">
-  <div class="max-w-6xl mx-auto px-5 flex justify-between items-center text-sm text-slate-500 dark:text-slate-400">
-    
-    <!-- Left -->
-    <p>Spandana</p>
-
-    <!-- Right -->
-    <p>Hyderabad, India</p>
-
-  </div>
-</footer>
-
-<script src="js/script.js" defer></script>
-</body>
+    <script src="js/script.js" defer></script>
+  </body>
 </html>
