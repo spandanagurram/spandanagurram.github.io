@@ -9,11 +9,13 @@ This portfolio presents professional information in a modern single-page layout 
 ## Features
 
 - Responsive layout for desktop, tablet, and mobile screens
-- Light mode and dark mode support
-- Dark mode preference saved with `localStorage`
-- Smooth scrolling navigation
+- Tailwind CSS powered design using the CDN
+- Dark-themed visual presentation through Tailwind dark classes
+- Sticky navigation with smooth scrolling
 - Clean corporate UI using Tailwind CSS CDN
-- Project cards with descriptions and tech stacks
+- Active navigation link highlighting while scrolling
+- Resume page with embedded PDF viewer
+- Project cards with descriptions and technology stacks
 - Contact links for email, GitHub, and LinkedIn
 
 ## Tech Stack
@@ -27,18 +29,21 @@ This portfolio presents professional information in a modern single-page layout 
 
 ```text
 Portfolio/
-├── index.html
-├── css/
-│   └── style.css
-└── js/
-    └── script.js
+|-- index.html
+|-- resume.html
+|-- README.md
+|-- assets/
+|   `-- resume.pdf
+|-- css/
+|   `-- style.css
+`-- js/
+    `-- script.js
 ```
 
-## Getting Started
+## Pages
 
-Open `index.html` directly in a web browser.
-
-No build tools or package installation are required because Tailwind CSS is loaded through the CDN.
+- `index.html` - Main portfolio page
+- `resume.html` - Embedded resume PDF page
 
 ## Sections
 
@@ -49,8 +54,14 @@ No build tools or package installation are required because Tailwind CSS is load
 - Projects
 - Contact
 
+## Getting Started
+
+Open `index.html` directly in a web browser.
+
+No build tools or package installation are required because Tailwind CSS is loaded through the CDN.
+
 ## Contact
 
 - Email: spandana.vrl@gmail.com
-- GitHub: https://github.com/Gurram-Spandana
+- GitHub: https://github.com/spandanagurram
 - LinkedIn: https://www.linkedin.com/in/spandana-gurram/
