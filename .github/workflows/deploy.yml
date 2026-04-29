@@ -1,0 +1,38 @@
+name: Deploy Portfolio CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Get your code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Create build folder
+      - name: Create dist folder
+        run: mkdir dist
+
+      # 3. Copy project files into dist
+      - name: Copy files to dist
+        run: |
+          cp index.html dist/
+          cp resume.html dist/
+          cp -r css dist/
+          cp -r js dist/
+          cp -r assets dist/
+
+      # 4. Upload build artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      # 5. Deploy to GitHub Pages
+      - name: Deploy to Pages
+        uses: actions/deploy-pages@v4
