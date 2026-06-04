@@ -1,10 +1,10 @@
-# Gurram Spandana Portfolio
+# Spandana Gurram Portfolio
 
-A clean, responsive personal portfolio website for Gurram Spandana, a Backend Developer specializing in Python, Django, and REST APIs.
+A clean, responsive personal portfolio website for Spandana Gurram, a Software Developer specializing in Python, Django, FastAPI, REST APIs, and AI-powered applications.
 
 ## Overview
 
-This portfolio presents professional information in a modern single-page layout with sections for profile summary, skills, experience, projects, and contact details.
+This portfolio presents professional information in a modern single-page layout with sections for profile summary, skills, experience, AI projects, certifications, and contact details.
 
 ## Features
 
@@ -15,7 +15,7 @@ This portfolio presents professional information in a modern single-page layout 
 - Clean corporate UI using Tailwind CSS CDN
 - Active navigation link highlighting while scrolling
 - Resume page with embedded PDF viewer
-- Project cards with descriptions and technology stacks
+- Project cards with descriptions, technology stacks, GitHub links, and live demo links
 - Contact links for email, GitHub, and LinkedIn
 
 ## Tech Stack
@@ -52,6 +52,7 @@ Portfolio/
 - Skills
 - Experience
 - Projects
+- Certifications
 - Contact
 
 ## Getting Started
